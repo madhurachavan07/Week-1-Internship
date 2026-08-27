@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Flexbox and CSS Grid</title>
+    <style>
+        /* General Reset & Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* 1. Navbar using Flexbox */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            margin-bottom: 24px;
+            font-size: 28px;
+            color: #1f2937;
+        }
+
+        /* 2. 3-Column Course Card Grid using CSS Grid */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .course-card {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #1f2937;
+        }
+
+        .course-card p {
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* 3. Responsive Media Query: Collapse grid to 1 column on small screens */
+        @media (max-width: 768px) {
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navbar (Flexbox) -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">ZoyaSofts</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="section-title">Available Courses</h2>
+        
+        <!-- Course Card Grid (CSS Grid) -->
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>HTML & CSS Fundamentals</h3>
+                <p>Learn the skeleton of the web. Master semantic tags, standard attributes, and basic webpage structuring.</p>
+            </div>
+            
+            <div class="course-card">
+                <h3>Flexbox & CSS Grid</h3>
+                <p>Master modern layout design techniques to build responsive navigation bars, dashboards, and flexible web components.</p>
+            </div>
+            
+            <div class="course-card">
+                <h3>Tailwind CSS Utility Framework</h3>
+                <p>Speed up your development workflow by building scalable user interfaces directly with utility-first CSS classes.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - Tailwind CSS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Header & Navbar (Flexbox using Tailwind) -->
+    <header class="bg-white shadow">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center p-6">
+            <div class="text-2xl font-bold text-blue-600">ZoyaSofts</div>
+            <ul class="flex space-x-6 font-semibold text-gray-600">
+                <li><a href="#" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition">Courses</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto my-10 px-6">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Available Courses</h2>
+        
+        <!-- Course Card Grid (CSS Grid using Tailwind with responsive breakpoints) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow hover:-translate-y-1 transition">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">HTML & CSS Fundamentals</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Learn the skeleton of the web. Master semantic tags, standard attributes, and basic webpage structuring.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow hover:-translate-y-1 transition">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Flexbox & CSS Grid</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Master modern layout design techniques to build responsive navigation bars, dashboards, and flexible web components.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow hover:-translate-y-1 transition">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Tailwind CSS Utility Framework</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Speed up your development workflow by building scalable user interfaces directly with utility-first CSS classes.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

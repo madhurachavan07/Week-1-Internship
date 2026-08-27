@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - Mini Project: Responsive Landing Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- 1. Header & Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center p-6">
+            <div class="text-2xl font-bold text-blue-600">ZoyaSofts</div>
+            <ul class="hidden md:flex space-x-6 font-semibold text-gray-600">
+                <li><a href="#" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="#features" class="hover:text-blue-600 transition">Courses</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 2. Hero Section -->
+        <section class="bg-blue-50 py-20 px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Build Your Career with ZoyaSofts Internship</h1>
+                <p class="text-lg text-gray-600 mb-8">Master real, responsive web development interfaces using semantic HTML, CSS layout systems, and Tailwind CSS[span_0](start_span)[span_0](end_span).</p>
+                <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition">Get Started Now</a>
+            </div>
+        </section>
+
+        <!-- 3. Features Grid Section -->
+        <section id="features" class="max-w-7xl mx-auto py-16 px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">What You Will Learn</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <article class="bg-white p-6 rounded-lg shadow border border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">HTML & CSS Fundamentals</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Learn proper web page structure using semantic tags, standard attributes, and basic styling concepts.</p>
+                </article>
+                <!-- Card 2 -->
+                <article class="bg-white p-6 rounded-lg shadow border border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Flexbox & CSS Grid</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Build modern, flexible layouts, responsive navigation bars, and dynamic multi-column dashboards.</p>
+                </article>
+                <!-- Card 3 -->
+                <article class="bg-white p-6 rounded-lg shadow border border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Tailwind CSS Utility Framework</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Speed up workflow by styling components directly in HTML using powerful utility-first classes.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. Contact Form Section -->
+        <section id="contact" class="bg-white py-16 px-6 border-t border-gray-200">
+            <div class="max-w-xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Contact Us</h2>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea rows="4" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">Submit Form</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center text-sm">
+        <p>&copy; 2026 ZoyaSofts Internship Training Program. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
